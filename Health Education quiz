@@ -1,0 +1,50 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var healthScore int
+    
+    
+    fmt.Println("Welcome to the Health Education Program!")
+    fmt.Println("Please enter your name:")
+    var name string
+    fmt.Scanln(&name)
+    
+    
+    fmt.Printf("\nHello %s! This program is designed to help you learn about healthy lifestyle choices and improve your overall health.\n\n", name)
+    
+    
+    fmt.Println("Let's get started with a quick quiz. Please answer the following questions:")
+    fmt.Println("1. How many servings of fruits and vegetables should you eat each day?")
+    var answer1 int
+    fmt.Scanln(&answer1)
+    if answer1 ==5 {
+        fmt.Println("Great job! Eating 5 servings of fruits and vegetables each day can help reduce the risk of chronic diseases such as heart disease, stroke, and cancer.")
+        healthScore += 10
+    } else {
+        fmt.Println("That's incorrect. The recommended daily intake of fruits and vegetables is 5 servings per day. Eating a variety of fruits and vegetables can provide important nutrients that help keep your body healthy.")
+    }
+    
+    fmt.Println("2. How much physical activity should you get each week?")
+    var answer2 int
+    fmt.Scanln(&answer2)
+    if answer2 == 150 {
+        fmt.Println("Awesome! The recommended amount of physical activity for adults is at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week.")
+        healthScore += 10
+    } else {
+        fmt.Println("That's not quite right. The recommended amount of physical activity for adults is at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week. Regular physical activity can help improve your overall health and reduce the risk of chronic diseases.")
+    }
+    
+   
+    fmt.Printf("\nThank you for completing the quiz, %s! Your overall health score is %d out of 20.\n\n", name, healthScore)
+    if healthScore >= 15 {
+        fmt.Println("Congratulations! You are making great choices for your health and wellness. Keep up the good work!")
+    } else if healthScore >= 10 {
+        fmt.Println("Good job! You have a solid foundation for your health and wellness, but there is always room for improvement. Keep learning and making healthy choices!")
+    } else {
+        fmt.Println("There is room for improvement in your health and wellness. Don't worry, small changes can make a big difference. Keep learning and trying new things to improve your health!")
+    }
+}
