@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "SHUBHAM SUTAR",
+  "author": "Harsha",
   "editor": "wokwi",
   "parts": [
     { "type": "wokwi-breadboard-half", "id": "bb1", "top": 16.2, "left": -6.8, "attrs": {} },
